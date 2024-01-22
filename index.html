@@ -4,65 +4,103 @@
 <head>
     <!-- Metadata for Character Set and Viewport -->
     <meta charset="UTF-8">
-    <link rel="icon" href="Images\Asset 9@4x.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/Asset 9@4x.png" type="image/x-icon" />
 
     <!-- Page Title and Meta Description -->
-    <title>Little Lemon</title>
-    <meta name="description" content="The website of the Little Lemon Restaurant, a family run 
-    Mediterranean restaurant located in Chicago, Illinois. Please come 
-    and enjoy our wide selection of authentic Mediterranean cuisine!">
+    <title>Little Lemon Restaurant</title>
+    <meta name="description" content="The website of the Little Lemon Restaurant, a family-run Mediterranean restaurant located in Chicago, Illinois. Please come and enjoy our wide selection of authentic Mediterranean cuisine!">
     <meta name="author" content="Little Lemon Restaurant">
 
-    <meta property="og:title" content="30% Discount on ALL Services!" />
+    <!-- Open Graph Protocol (OGP) Metadata -->
+    <meta property="og:title" content="Little Lemon Restaurant" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="\Images\Asset 16@4x.png" />
+    <meta property="og:image" content="Images/Asset 16@4x.png" />
     <meta property="og:url" content="https://little-lemon.netlify.app/" />
-
+    <meta property="og:description" content="Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day. Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. To craft the menu, Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region." />
 
     <!-- Link to External CSS Stylesheet -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Preconnect to External Fonts -->
-    <link rel="preconnect" href="https://www.fonts.googleapis.com/">
-    <link rel="preconnect" href="https://www.fonts.static.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.static.com/" crossorigin="">
     <!-- Link to Google Fonts CSS -->
-    <link href="https://www.fonts.googleapis.com/css2?family=Markazi+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Header Element for Logo -->
+<body class="restore">
+
+    <div class="page-loader" style="display: none;"></div>
+
+    <!-- Header Element for Logo and Navigation -->
     <header>
-        <img src="\Images\Asset 16@4x.png" alt="Little Lemon Logo">
+        <img src="Images/Asset 16@4x.png" alt="Little Lemon Logo">
+        <nav>
+            <ul class="menu_large">
+                <li class="menu_item"><a href="#home">Home</a></li>
+                <li class="menu_item menu_item_has_children">
+                    <a href="#menu">Menu</a>
+                    <!-- Submenu for the "Menu" item -->
+                    <ul class="submenu">
+                        <li><a href="#submenu1">Submenu 1</a></li>
+                        <li><a href="#submenu2">Submenu 2</a></li>
+                        <li><a href="#submenu3">Submenu 3</a></li>
+                        <li><a href="#submenu4">Submenu 4</a></li>
+                        <li><a href="#submenu5">Submenu 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item menu_item_has_children">
+                    <a href="#book">Book</a>
+                    <!-- Submenu for the "Book" item -->
+                    <ul class="submenu">
+                        <li><a href="#submenu1">Submenu 1</a></li>
+                        <li><a href="#submenu2">Submenu 2</a></li>
+                        <li><a href="#submenu3">Submenu 3</a></li>
+                        <li><a href="#submenu4">Submenu 4</a></li>
+                        <li><a href="#submenu5">Submenu 5</a></li>
+                    </ul>
+                </li>
+                <li class="menu_item"><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="small_screen_header init">
+            <div class="small_menu_bar">
+                <div class="menu_toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
     </header>
+</body>
 
-    <!-- Navigation Element -->
-    <nav>
-        <ul>
-            <!-- Navigation Links -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+</html>
 
+
+<body>
     <!-- Main Element for Main Page Content -->
     <main>
         <!-- Section 1 -->
         <section>
             <article>
-                <!-- Heading 1 and Content -->
-                <h1>Heading 1</h1>
+                <!-- Promotion and Content -->
                 <p>
-                    <main>
+                  <img src="" alt="Promotion"/>
     <aside class="ads-banner">
      <div class="banner-overlay">
+        <img src="Images\Restaurant View.jpg" alt="Little Lemon" />
+        <div class="overlay">
         <h1>
             GET 30% OFF THIS MONTH
          </h1>
          <p>
-            We are having a discount offer for our customers this month be one of the first to get this offer
+            We are having a discount offer for our customers this month be one of the first to get this offer!
          </p>
      </div>
     </aside>
@@ -74,20 +112,47 @@
         <!-- Section 2 -->
         <section>
             <article>
-                <!-- Heading 2 and Content -->
-                <h2>Heading 2</h2>
+                <!-- Menu and Content -->
+                <h2>Menu</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugit consequatur corporis rem ullam non? Dolor
                     tempore nesciunt sed quam quia dicta, veritatis officia quaerat perspiciatis eaque, itaque, repellat aliquam.
                 </p>
             </article>
         </section>
-
+        <section id="products">
+            <article class="brand-card">
+              <h3 class="brand-title">Djulla</h3>
+              <img src="./assets/images/img-2.png" alt="" />
+              <p class="brand-description">
+                Beyond the codes of traditional jewelry, the spirit of Djula is that
+                of a young Parisian house that launched nearly 20 years ago- famous
+                for its chic and urban pieces of jewelry.
+              </p>
+            </article>
+            <article class="brand-card">
+              <h3 class="brand-title">Leo Pizzor</h3>
+              <img src="./assets/images/img-3.png" alt="" />
+              <p class="brand-description">
+                The luxury of artisanal excellence in the goldsmith district of
+                Valenza, the heart of the Made in Italy.
+              </p>
+            </article>
+            <article class="brand-card">
+              <h3 class="brand-title">Marco Polo</h3>
+              <img src="./assets/images/img-4.png" alt="" />
+              <p class="brand-description">
+                Since 2000, Marco has incorporated the traditions and virtues passed
+                down from his father to create jewelry that embodies the luxury of
+                Italian craftsmanship and contemporary design.
+              </p>
+            </article>
+          </section>
         <!-- Section 3 -->
         <section>
             <article>
-                <!-- Heading 3 and Content -->
-                <h2>Heading 3</h2>
+                <!-- Book and Content -->
+                <h2>Reservation</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugit consequatur corporis rem ullam non? Dolor
                     tempore nesciunt sed quam quia dicta, veritatis officia quaerat perspiciatis eaque, itaque, repellat aliquam.
@@ -98,8 +163,8 @@
         <!-- Section 4 -->
         <section>
             <article>
-                <!-- Heading 4 and Content -->
-                <h2>Heading 4</h2>
+                <!-- About and Content -->
+                <h2>About</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugit consequatur corporis rem ullam non? Dolor
                     tempore nesciunt sed quam quia dicta, veritatis officia quaerat perspiciatis eaque, itaque, repellat aliquam.

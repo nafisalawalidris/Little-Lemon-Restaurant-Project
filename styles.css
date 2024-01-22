@@ -1,42 +1,43 @@
+/* Apply box-sizing to include padding and border in the element's total width and height */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styling for background, font, and spacing */
 body {
-    background-image: url("Images\Asset 16@4x.png");
+    background-image: url("Images/Asset 16@4x.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: lighten;
-
     background-color: #edefee;
     font-family: 'Markazi Text', serif;
     font-size: 1.2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; /* Set a maximum width for larger screens */
 }
 
-
+/* Common margin for main, header, nav, and footer */
 main, header, nav, footer {
     margin: 0.75rem auto;
 }
 
+/* Header image styling with rotation animation */
 header > img {
     display: block;
-    width: 35%;
-    min-width: 240px;
+    width: 100%; /* Adjusted width to fill the container */
+    max-width: 240px; /* Set a maximum width for larger screens */
     margin-left: auto;
     margin-right: auto;
-
-    animation-name: logo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation: logo 10s infinite; /* Apply rotation animation */
 }
 
+/* Rotation animation keyframes */
 @keyframes logo {
     20% { transform: rotate(15deg); } 
     40% { transform: rotate(-10deg); } 
@@ -45,6 +46,7 @@ header > img {
     100% { transform: rotate(0deg); } 
 }
 
+/* Navigation styling with shadow, background color, and spacing */
 nav {
     padding: 0.3rem;
     background-color: rgb(241, 238, 233);
@@ -53,6 +55,7 @@ nav {
     margin-bottom: 2rem;
 }
 
+/* Navigation list styling with flex display and space-around alignment */
 nav ul {
     list-style: none;
     text-align: center;
@@ -62,6 +65,7 @@ nav ul {
     justify-content: space-around;
 }
 
+/* Navigation item styling with background color, padding, and border radius */
 nav li {
     display: inline-block;
     background-color: #769e0f;
@@ -71,20 +75,142 @@ nav li {
     margin: 0 0.1rem;
 }
 
-nav  a {
+/* Navigation link styling with color, text-decoration, and transition effect */
+nav a {
     color: antiquewhite;
     text-decoration: none;
+    transition: padding 0.3s, font-size 0.3s; /* Add smooth transition effect */
 }
 
+/* Navigation link hover styling with increased padding and font size */
 nav a:hover {
     padding: 0.6rem 0.85rem;
     font-size: 1.3rem;
 }
 
+/* Heading styles with margin-bottom */
 h2, h3 {
     margin-bottom: 0.7rem;
 }
 
+/* Style for dropdown submenu */
+.menu_item_has_children:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(241, 238, 233);
+    box-shadow: 0.5rem 0.5rem 3rem grey;
+    border-radius: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.submenu li {
+    display: block;
+    background-color: #769e0f;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    margin: 0.1rem 0;
+}
+
+.submenu a {
+    color: antiquewhite;
+    text-decoration: none;
+    transition: padding 0.3s, font-size 0.3s;
+}
+
+.submenu a:hover {
+    padding: 0.6rem 0.85rem;
+    font-size: 1.3rem;
+}
+
+/*=============================================
+=            Main            =
+=============================================*/
+main {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main section:nth-child(2) {
+    flex: 1;
+    margin-block: 3rem;
+  }
+  
+  main section:nth-child(1) {
+    position: relative;
+    width: 100%;
+    height: 36rem;
+  }
+  main section:nth-child(1) img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    animation: moveBG 5s infinite linear;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    color: var(--color-font);
+    user-select: none;
+  }
+  .overlay p:nth-child(1),
+  .overlay p:nth-child(2) {
+    text-transform: uppercase;
+  }
+  .overlay p:nth-child(2) {
+    font-size: 2rem;
+  }
+  @keyframes moveBG {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
+  
+  main section:nth-child(2) {
+    align-self: center;
+    margin-inline: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 53.125rem;
+  }
+  main section:nth-child(1),
+  main section:nth-child(2) article {
+    margin: 0 auto;
+  }
+  
+  #info {
+    font-size: 1.2rem;
+    max-width: 50rem;
+    background-color: #00000070;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  /*=====  End of Main  ======*/
 section {
     display: flex;
     text-align: center;
