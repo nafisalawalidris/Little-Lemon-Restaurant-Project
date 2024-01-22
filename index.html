@@ -118,253 +118,28 @@
                 <!-- Restaurant Description -->
                 Welcome. This is Little Lemon, based in Chicago, Illinois. Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.
             </p>
-            <p class="intro_signature">Nafisa Lawal Idris</p>
-        </div>
-
-        <!-- Additional Information Headers -->
-        <div class="upper_inner_header">
-            <div>The taste you’ll remember</div>
-        </div>
-        <div class="lower_inner_header">
-            <div>Adventurous dining for those with a curious palate</div>
-        </div>
-    </div>
-</section>
-
-
-                    <section class="menu_section" id="menu">
-                        <p class="heading_subtitle_gold">Taste the best</p>
-                        <h2>DISCOVER OUR MENU</h2>
-                        <div class="menu_swiper swiper">
-                            <div class="menu_container swiper-wrapper">           
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pasta/fettucine.png" width="600" height="600" alt="Fettucine">
-                                    <h3>Fettucine</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$10.60</p>                        
-                                </article>                    
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pasta/bucatini.gif" width="600" height="600" alt="Bucantini">
-                                    <h3>Bucantini</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$10.60</p>                        
-                                </article>           
-                                               
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/plate.png" width="779" height="776" alt="Capricciosa">
-                                    <h3>Capricciosa</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$5.45</p>                        
-                                </article>
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pasta/casunziei1.png" width="554" height="555" alt="Casunziei">
-                                    <h3>Casunziei</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$10.60</p>                        
-                                </article> 
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pizza/diablo.png" width="527" height="528" alt="Diablo">
-                                    <h3>Diablo</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$1.85</p>                        
-                                </article> 
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pizza/periperi.png" width="549" height="542" alt="Pepperoni">
-                                    <h3>Pepperoni</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$6.60</p>                        
-                                </article>
-                                
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pizza/saporita.png" width="600" height="600" alt="Saporita">
-                                    <h3>Saporita</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$1.70</p>                        
-                                </article>
-                                                
-                                <article class="swiper-slide">                        
-                                    <img loading="lazy" src="/img/pasta/saporita.png" width="600" height="600" alt="Farfalle">
-                                    <h3>Farfalle</h3>
-                                    <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    <p class="menu_price">$10.60</p>                        
-                                </article>
-                                               
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div> 
-                        </div>  
-                        <div class="swiper-pagination"></div>
-                        
-                    </section>
-                    
-                    <section class="booking_section" id="book">
-                        <p class="heading_subtitle_gold">Online Booking</p>
-                        <h2>Reservation</h2>
-                        <p class="heading_more">Curabitur ac nisl molestie, facilisis nibh ac, facilisis ligula. Integer congue malesuada eros congue varius</p>
-                        <div class="booking_container">
-                            <div class="booking_form">
-                                <form action="https://www.opentable.com/restaurant-search.aspx" target="_blank">
-                                    <div>
-                                        <div>                            
-                                            <select id="people_select" name="partysize">
-                                                <option value="1">1 person</option>
-                                                <option value="2" selected="selected">2 people</option>
-                                                <option value="3">3 people</option>
-                                                <option value="4">4 people</option>
-                                                <option value="5">5 people</option>
-                                                <option value="6">6 people</option>
-                                                <option value="7">7 people</option>
-                                                <option value="8">8 people</option>
-                                            </select>
-                                        </div>
-                                        <div>                        
-                                            <input type="text" id="date" name="startDate" onclick="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Date">                       
-                                        </div>
-                                        <div>
-                                        
-                                            <input type="text" id="time" name="ResTime" onclick="(this.type='time')" onblur="if(!this.value)this.type='text'" placeholder="Time">
-                                        </div>
-                                    </div>
-                                    <button type="submit" value="BOOK">BOOK</button>                        
-                                    <input type="hidden" name="rid" class="rid" value="1">                 
-                                    <input type="hidden" name="txtDateFormat" class="txtDateFormat" value="dd/mm/yyyy">
-                                    <input type="hidden" name="restref" class="restref" value="1">
-                                </form>
-                            </div>
-                        </div>
-                        
-                    </section>
-                    <section class="about_section" id="about">
-                        <p class="heading_subtitle_gold">Ready to serve</p>
-                        <h2>Talented Chefs</h2>
-                        <p class="heading_more">Curabitur ac nisl molestie, facilisis nibh ac, facilisis ligula. Integer congue malesuada eros congue varius</p>
-                        <div class="bio_swiper swiper">
-                            <div class="bio_container swiper-wrapper">
-                                <article class="swiper-slide">               
-                                    <figure class="chefs_bio">
-                                        <img loading="lazy" src="/img/chefs/h6-team-1.jpg"  width="900" height="969" alt="Mario Luigi">
-                                        <figcaption>
-                                            <h3>Mario Luigi</h3>
-                                            <p>Head Chef</p>    
-                                        
-                                        </figcaption>
-                                        <div class="member-overlay">
-                                            <div class="member-hover">
-                                                <div class="pos-vertical-center">
-                                                    <div class="member-social">
-                                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                    </div>
-                                
-                                                    <div class="member-desc">
-                                                        <p>Passion for cooking is in his genes. He grew up appreciating outstanding food and service at an early age.</p>
-                                                    </div>                           
-                                                </div>                        
-                                            </div>                      
-                                        </div>
-                                    </figure>
-                                </article>
-                        
-                                <article class="swiper-slide">             
-                                    <figure class="chefs_bio">
-                                        <img loading="lazy" src="/img/chefs/h6-team-2.jpg"  width="900" height="969"  alt="Iris Leach">
-                                        <figcaption>
-                                            <h3>Iris Leach</h3>
-                                            <p>Sous Chef</p>  
-                                        </figcaption>
-            
-                                        <div class="member-overlay">
-                                            <div class="member-hover">
-                                                <div class="pos-vertical-center">
-                                                    <div class="member-social">
-                                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                    </div>
-                                
-                                                    <div class="member-desc">
-                                                        <p>Passion for cooking is in her genes. She grew up appreciating outstanding food and service at an early age.</p>
-                                                    </div>                           
-                                                </div>                        
-                                            </div>                      
-                                        </div>
-            
-                                    </figure>                      
-                                </article>
-            
-                                <article class="swiper-slide">             
-                                    <figure class="chefs_bio">
-                                        <img loading="lazy" src="/img/chefs/h6-team-3.jpg"  width="900" height="969"  alt="Travis Pena">
-                                        <figcaption>
-                                            <h3>Travis Pena</h3>
-                                            <p>Sous Chef</p>   
-                                        </figcaption>
-            
-                                        <div class="member-overlay">
-                                            <div class="member-hover">
-                                                <div class="pos-vertical-center">
-                                                    <div class="member-social">
-                                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                    </div>
-                                
-                                                    <div class="member-desc">
-                                                        <p>Passion for cooking is in his genes. He grew up appreciating outstanding food and service at an early age.</p>
-                                                    </div>                           
-                                                </div>                        
-                                            </div>                      
-                                        </div>
-            
-                                    </figure>                      
-                                </article>
-            
-                                <article class="swiper-slide">             
-                                    <figure class="chefs_bio">
-                                        <img loading="lazy" src="/img/chefs/h6-team-4.jpg"  width="900" height="969"  alt="Kati Rivera">
-                                        <figcaption>
-                                            <h3>Kati Rivera</h3>
-                                            <p>Head Chef</p>   
-                                        </figcaption>
-            
-                                        <div class="member-overlay">
-                                            <div class="member-hover">
-                                                <div class="pos-vertical-center">
-                                                    <div class="member-social">
-                                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                    </div>
-                                
-                                                    <div class="member-desc">
-                                                        <p>Passion for cooking is in her genes. She grew up appreciating outstanding food and service at an early age.</p>
-                                                    </div>                           
-                                                </div>                        
-                                            </div>                      
-                                        </div>
-            
-                                    </figure>                      
-                                </article>
-                            </div>
-                            
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        
-            
-                    </section>
+            </div>
+        </section>
     
+        <section
+         class="opening_hours_section">                       
+            <div class="address_box">
+                <div>  
+                    <p>Tuesday-Thursday: 12am-9pm</p>
+                    <p>Friday-Sunday: 12am-11pm</p>
+                    <p>Monday: Closed</p>
+                </div>
+            </div>            
+        </section>        
+
     <!-- Footer Element -->
     <footer style="display: flex; align-items: center; justify-content: space-between; padding: 20px;">
         
         <!-- Footer Logo -->
-        <img src="Images\Asset 20@4x.png" alt="Little Lemon Footer Logo" style="width: 10px; height: 10;">
+        <img src="Images\Asset 16@4x.png" alt="Little Lemon Footer Logo" style="width: 5px; height: auto">
     
         <!-- Copyright Information -->
-        <p style="margin: 0;"> © 2023 Little Lemon Restaurant</p>
+        <p style="margin: 0;"> © 2024 Little Lemon Restaurant</p>
     </footer>
     
 </body>
