@@ -437,9 +437,6 @@ main {
     }
   }
   
- 
-  
-  
   
 section {
     display: flex;
@@ -452,103 +449,6 @@ article {
     flex: 1;
 }
 
-#offer {
-    background-color: #a38947;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    border-radius: 0.5rem;
-    margin: 0 0.75rem;
-}
-
-#offer > p {
-    color: rgb(241, 238, 233);
-    font-size: 2.5rem;
-    font-weight: bold;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    margin: 0 0.75rem;
-}
-
-#offer > img {
-    border-radius: 0 0.5rem 0.5rem 0;
-    width: 30%;
-    height: 100%;
-}
-
-#offer a {
-    display: block;
-    float: right;
-    background-color: #089716;
-    color: rgb(241, 238, 233);
-    padding: 0.8rem;
-    margin-top: 0.7rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    box-shadow: 0.3rem 0.3rem 1rem #e9cf8e;
-    border-radius: 3rem;
-}
-
-#offer a:hover {
-    padding: 0.9rem;
-}
-
-#service h1 {
-    color: rgb(241, 238, 233);
-    background-color: #089716;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 0;
-    padding: 1rem;
-    font-size: 2.5rem;
-    border-radius: 0.7rem;
-    font-family: Urbanist;
-}
-
-#service, #info {
-    border-radius: 0.5rem;
-    margin-top: 2rem;
-}
-
-#info {
-    background-color: #a38947;
-}
-
-#info article {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 1.2rem;
-    padding: 0.5rem;
-    background-color: #e9cf8e;
-    border-radius: 0.5rem;
-}
-
-#info p {
-    text-align: justify;
-}
-
-#info li {
-    list-style: none;
-}
-
-#info img {
-    width: 100%;
-    border-radius: 0.5rem;
-    margin-bottom: 0.7rem;
-}
-
-#info figcaption {
-    font-family: Urbanist;
-}
-
-#info a {
-    text-decoration: none;
-    color: #089716;
-    font-weight: 800;
-    font-size: 1rem;
-}
 
 footer {
     display: flex;
@@ -582,7 +482,6 @@ footer {
 .opening_hours_section:hover {
     box-shadow: 0 0 20px rgba(4, 255, 0, 0.9); /* Increase shadow size and make the glow more intense */
 }
-
 
 
 footer > div {
