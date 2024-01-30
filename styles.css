@@ -41,6 +41,7 @@ header, main, footer {
     height: auto;
 }
 
+
 /* Styling for the menu toggle button */
 .menu_toggle {
     cursor: pointer;
@@ -144,11 +145,11 @@ nav a:hover {
     font-size: 1.3rem;
 }
 
+
 /* Heading styles */
 h2, h3 {
     margin-bottom: 0.7rem;
 }
-
 
 /* Body styling for background, font, and spacing */
 body {
@@ -164,8 +165,7 @@ body {
     max-width: 80%;
 }
 
-
-
+/* Additional Menu Styles */
 .menu_additional {
     padding-top: 30px;
 }
@@ -188,6 +188,7 @@ body {
     font-size: 15px;
 }
 
+/* Overlay Background Styles */
 #overlay_background {
     opacity: 0;
     visibility: hidden;
@@ -202,6 +203,7 @@ body {
     transition: all 0.5s cubic-bezier(.645, .045, .355, 1);
 }
 
+/* Toggle Menu Styles */
 body.toggle_menu {
     overflow: hidden;
 }
@@ -229,6 +231,7 @@ body.toggle_menu #overlay_background {
     transform: translate(-280px, 0);
 }
 
+/* Main Container Styles */
 main {
     background-color: #f9fafc;
     background-image: url(/img/body-bg.jpg);
@@ -237,7 +240,7 @@ main {
     background-repeat: repeat;
 }
 
-/* Styles for the menu items */
+/* Menu Item Styles */
 .menu_item {
     width: 25%; /* Set width to 25% for 4 items per row */
     box-sizing: border-box;
@@ -260,28 +263,25 @@ main {
 }
 
 
-/* Main Container */
-
-  
-  /* Section 1 - Banner */
-  main section:nth-child(1) {
+/* Banner Section Styles */
+main section:nth-child(1) {
     position: relative;
     width: 100%;
     height: 36rem;
     display: flex;
-  }
-  
-  /* Background Image in Section 1 */
-  main section:nth-child(1) img {
+}
+
+/* Background Image in Section 1 */
+main section:nth-child(1) img {
     height: 100%;
     object-fit: cover;
     width: 100%;
     object-position: top;
     opacity: 0.4; /* Faded image */
-  }
-  
-  /* Overlay in Section 1 */
-  .overlay {
+}
+
+/* Overlay in Section 1 */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -298,27 +298,89 @@ main {
     font-size: 6rem;
     color: var(--color-font);
     user-select: none;
-  }
-  
-  .overlay p:nth-child(1),
-  .overlay p:nth-child(2) {
+}
+
+.overlay p:nth-child(1),
+.overlay p:nth-child(2) {
     text-transform: uppercase;
-  }
-  
-  .overlay p:nth-child(2) {
+}
+
+.overlay p:nth-child(2) {
     font-size: 2rem;
-  }
-  
-  /* Section Styles */
-  section {
+}
+
+/* About Section Hover Styles */
+.about_section:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.about_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.about_container:hover .reflection {
+    opacity: 1;
+    transform: translateY(-50%) rotateX(180deg);
+    transition: all 0.5s ease;
+}
+
+.reflection {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top;
+}
+
+/* Box Section Styles */
+.box_section {
+    padding: 50px 0;
+    background-color: #f9fafc;
+    text-align: center;
+}
+
+.box_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: #E4B34C;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    transition: transform 0.5s ease;
+}
+
+.box:hover {
+    transform: rotate(360deg);
+}
+
+/* Section Styles */
+section {
     display: flex;
     text-align: center;
     padding: 0.75rem 0;
     justify-content: center;
-  }
-  
-  .menu_container img{
-    width:100%;
+}
+
+/* Menu Container Image Styles */
+.menu_container img {
+    width: 100%;
     height: auto;
     box-shadow: 5px 5px 10px black;
     border-radius: 50%;
@@ -326,37 +388,45 @@ main {
     margin-bottom: 27px;
     transition: all 1s ease-out 0s;
 }
+
 .menu_container img:hover {
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.menu_container h3{
-    color:#464646;
+
+/* Menu Container Heading Styles */
+.menu_container h3 {
+    color: #464646;
     font-family: 'Caviar Dreams Bolder', sans-serif;
-    font-size:26px;
+    font-size: 26px;
     margin-bottom: 16px;
 }
-.menu_container p.menu_description{
+
+/* Menu Container Description Styles */
+.menu_container p.menu_description {
     margin-bottom: 8px;
-    color:#495e57;
+    color: #495e57;
     font-size: 1.25em;
 }
-.menu_container p.menu_price{
+
+/* Menu Container Price Styles */
+.menu_container p.menu_price {
     font-size: 1.25em;
     color: #E4B34C;
 }
 
-/* Section 4 */
-.booking_section{
+/* Booking Section Styles */
+.booking_section {
     padding: 50px 0;
-    position: relative;  
+    position: relative;
 }
 
-.booking_section h2{
-    margin-bottom:0;
+.booking_section h2 {
+    margin-bottom: 0;
 }
 
+/* Booking Container Styles */
 .booking_container {
     background-image: url(/img/banner-2.jpg);
     background-position: center center;
@@ -368,6 +438,7 @@ main {
     position: relative;
 }
 
+/* Overlay Before Booking Container Styles */
 .booking_container::before {
     content: '';
     position: absolute;
@@ -378,11 +449,13 @@ main {
     background: rgba(86, 128, 114, 0.4);
 }
 
+/* Booking Form Styles */
 .booking_form {
     padding: 50px 30px;
     position: relative;
 }
 
+/* Form Styles Inside Booking Section */
 .booking_section form {
     display: flex;
     justify-content: center;
@@ -392,6 +465,7 @@ main {
     background-color: rgba(97, 166, 78, 0.9);
 }
 
+/* Form Container Styles */
 .booking_section form>div {
     display: flex;
     justify-content: center;
@@ -399,6 +473,7 @@ main {
     flex-wrap: wrap;
 }
 
+/* Input and Select Styles */
 .booking_section input,
 .booking_section select {
     width: 196px;
@@ -428,6 +503,7 @@ input::-webkit-calendar-picker-indicator {
     color: #495e57;
 }
 
+/* Input Placeholder Styles */
 .booking_section input::-webkit-input-placeholder,
 .booking_section input::-moz-placeholder,
 .booking_section input:-ms-input-placeholder,
@@ -436,10 +512,12 @@ input::-webkit-calendar-picker-indicator {
     color: white;
 }
 
+/* Input Focus Styles */
 .booking_section input:focus-visible {
     outline: none;
 }
 
+/* Button Styles */
 .booking_section button {
     margin-top: 15px;
     padding: 10px 15px;
@@ -454,6 +532,7 @@ input::-webkit-calendar-picker-indicator {
     font-family: "Josefin Sans", sans-serif;
 }
 
+/* Button Before and After Styles */
 .booking_section button::before,
 .booking_section button::after {
     position: absolute;
@@ -477,20 +556,23 @@ input::-webkit-calendar-picker-indicator {
     top: calc(50% - 5px);
 }
 
+/* Button Hover Styles */
 .booking_section button:hover {
     color: #f6e387;
     background-color: #066e4b;
 }
 
+/* Button Hover Before Styles */
 .booking_section button:hover::before {
     right: -11px;
 }
 
+/* Button Hover After Styles */
 .booking_section button:hover::after {
     left: 169px;
 }
-  /*=====  Footer ======*/
 
+/* Footer Styles */
 footer {
     display: flex;
     justify-content: space-between;
@@ -498,46 +580,35 @@ footer {
     box-shadow: 0.5rem 0.5rem 3rem grey;
     background-color: rgb(241, 238, 233);
     font-size: small;
+    margin: 0.5rem;
+    padding: 1rem;
 }
 
-  footer > div {
-    flex: 1;
-    margin: 0.7rem 0.7rem;
-    text-align: center;
+/* Copyright Styles in Footer */
+footer p.copyright {
+    border-top: #333333;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: right;
 }
 
+/* Footer Logo Styles */
 footer img {
-    width: 0.1rem;
-    height: auto;
-    min-width: 0.1rem;
+    max-width: 12%;
 }
 
-@media (max-width: 20px) {
-    nav ul {
+/* Responsive Styling for Smaller Screens in Footer */
+@media (max-width: 500px) {
+    footer {
         flex-direction: column;
-        background-color: #9cce1f;
-        border-radius: 0.5rem;
-    }
-    #offer > p {
-        font-size: 1rem;
-    }
-    #offer a {
-        font-size: 0.8rem;
-    }
-    #offer img {
-        border-radius: 0 0 0.5rem 0.5rem;
+        align-items: center;
+        text-align: center;
     }
 
-    #info {
-        display: flex;
-        flex-direction: column;
+    footer div {
+        margin-top: 0.5rem;
     }
 }
-
-@media (max-width: 200px) {
-    #offer {
-        flex-direction: column-reverse;
-    }
-}
-
-
