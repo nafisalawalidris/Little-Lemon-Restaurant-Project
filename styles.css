@@ -381,7 +381,7 @@ section {
 /* Menu Container Image Styles */
 .menu_container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     box-shadow: 5px 5px 10px black;
     border-radius: 50%;
     display: inline-block;
@@ -609,6 +609,9 @@ footer img {
     }
 
     footer div {
-        margin-top: 0.5rem;
+        margin-top: 10px;
+        padding: 0.1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-}
