@@ -23,10 +23,11 @@
 
     <!-- Preconnect to External Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.static.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <!-- Link to Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text" rel="stylesheet">
 </head>
+
 
 <body class="restore">
 
@@ -40,40 +41,16 @@
                 <li class="menu_item"><a href="#home">Home</a></li>
                 <li class="menu_item menu_item_has_children">
                     <a href="#menu">Menu</a>
-                    <!-- Submenu for the "Menu" item -->
-                    <ul class="submenu">
-                        <li><a href="#appetizers">Appetizers</a></li>
-                        <li><a href="#main-courses">Main Courses</a></li>
-                        <li><a href="#desserts">Desserts</a></li>
-                        <li><a href="#beverages">Beverages</a></li>
-                    </ul>
-                </li>
+                </li> <!-- Close the menu_item_has_children li tag -->
                 <li class="menu_item menu_item_has_children">
                     <a href="#book">Book</a>
-                    <!-- Submenu for the "Book" item -->
-                    <ul class="submenu">
-                        <li><a href="#reservations">Reservations</a></li>
-                        <li><a href="#private-events">Private Events</a></li>
-                        <li><a href="#special-offers">Special Offers</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
-                    </ul>
-                </li>
+                </li> <!-- Close the menu_item_has_children li tag -->
                 <li class="menu_item"><a href="#about">About</a></li>
             </ul>
         </nav>
-
-        <!-- Mobile Menu Toggle -->
-        <div class="small_screen_header init">
-            <div class="small_menu_bar">
-                <div class="menu_toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </div>
     </header>
+</body>
+
 
     <!-- Main Element for Main Page Content -->
     <main>
@@ -103,29 +80,150 @@
 
         <!-- Section 2: Introduction -->
         <section class="intro_section">
-            <div class="intro_container">
-                <!-- Top Section with Restaurant Information -->
-                <div class="intro_top">
+            <div class="intro_container">             
+            </div>
+        </section>
+        <section class="opening_hours_section">
+            <div class="intro-container">
+                <div>
                     <p class="heading_subtitle_gold">Dinner at</p>
                     <h2>The Lemon Room</h2>
-                    <p class="intro_text">
-                        <!-- Restaurant Description -->
-                        Welcome. This is Little Lemon, based in Chicago, Illinois. Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.
-                    </p>
+                    Welcome. This is Little Lemon, based in Chicago, Illinois. Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.
                 </div>
             </div>
+        </section>
+        <section class="menu_section" id="menu">
+            <p class="heading_subtitle_gold">Taste the best</p>
+            <h2>DISCOVER OUR MENU</h2>
+            <div class="menu_swiper swiper">
+                <div class="menu_container swiper-wrapper">           
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pasta/fettucine.png" width="600" height="600" alt="Fettucine">
+                        <h3>Fettucine</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$10.60</p>                        
+                    </article>                    
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pasta/bucatini.gif" width="600" height="600" alt="Bucantini">
+                        <h3>Bucantini</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$10.60</p>                        
+                    </article>           
+                                   
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/plate.png" width="779" height="776" alt="Capricciosa">
+                        <h3>Capricciosa</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$5.45</p>                        
+                    </article>
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pasta/casunziei1.png" width="554" height="555" alt="Casunziei">
+                        <h3>Casunziei</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$10.60</p>                        
+                    </article> 
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pizza/diablo.png" width="527" height="528" alt="Diablo">
+                        <h3>Diablo</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$1.85</p>                        
+                    </article> 
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pizza/periperi.png" width="549" height="542" alt="Pepperoni">
+                        <h3>Pepperoni</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$6.60</p>                        
+                    </article>
+                    
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pizza/saporita.png" width="600" height="600" alt="Saporita">
+                        <h3>Saporita</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$1.70</p>                        
+                    </article>
+                                    
+                    <article class="swiper-slide">                        
+                        <img loading="lazy" src="/img/pasta/saporita.png" width="600" height="600" alt="Farfalle">
+                        <h3>Farfalle</h3>
+                        <p class="menu_description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="menu_price">$10.60</p>                        
+                    </article>
+                                   
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+            </div>  
+            <div class="swiper-pagination"></div>
+            
         </section>
 
-        <!-- Section 3: Opening Hours -->
-        <section class="opening_hours_section">
-            <div class="address_box">
-                <div>
-                    <p>Tuesday-Thursday: 12am-9pm</p>
-                    <p>Friday-Sunday: 12am-11pm</p>
-                    <p>Monday: Closed</p>
+        <section class="booking_section" id="book">
+            <p class="heading_subtitle_gold">Online Booking</p>
+            <h2>Reservation</h2>
+            <p class="heading_more">Curabitur ac nisl molestie, facilisis nibh ac, facilisis ligula. Integer congue malesuada eros congue varius</p>
+            <div class="booking_container">
+                <div class="booking_form">
+                    <form action="https://www.opentable.com/restaurant-search.aspx" target="_blank">
+                        <div>
+                            <div>                            
+                                <select id="people_select" name="partysize">
+                                    <option value="1">1 person</option>
+                                    <option value="2" selected="selected">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7">7 people</option>
+                                    <option value="8">8 people</option>
+                                </select>
+                            </div>
+                            <div>                        
+                                <input type="text" id="date" name="startDate" onclick="(this.type='date')" onblur="if(!this.value)this.type='text'" placeholder="Date">                       
+                            </div>
+                            <div>
+                            
+                                <input type="text" id="time" name="ResTime" onclick="(this.type='time')" onblur="if(!this.value)this.type='text'" placeholder="Time">
+                            </div>
+                        </div>
+                        <button type="submit" value="BOOK">BOOK</button>                        
+                        <input type="hidden" name="rid" class="rid" value="1">                 
+                        <input type="hidden" name="txtDateFormat" class="txtDateFormat" value="dd/mm/yyyy">
+                        <input type="hidden" name="restref" class="restref" value="1">
+                    </form>
                 </div>
             </div>
-        </section>
+
+        <section id="Menu">
+            <article class="brand-card">
+              <h3 class="title">Our New Menu</h3>
+              <img src="./assets/images/img-2.png" alt="" />
+              <p class="description">
+                Beyond the codes of traditional jewelry, the spirit of Djula is that
+                of a young Parisian house that launched nearly 20 years ago- famous
+                for its chic and urban pieces of jewelry.
+              </p>
+              See our new menu
+            </article>
+            <article class="brand-card">
+              <h3 class="title">Book a Table</h3>
+              <img src="./assets/images/img-3.png" alt="" />
+              <p class="description">
+                The luxury of artisanal excellence in the goldsmith district of
+                Valenza, the heart of the Made in Italy.
+              </p>
+              Book your table now
+            </article>
+            <article class="brand-card">
+              <h3 class="brand-title">Opening Hours</h3>
+              <img src="./assets/images/img-4.png" alt="" />
+              <p class="brand-description">
+                <p>Tuesday-Thursday: 12am-9pm</p>
+                <p>Friday-Sunday: 12am-11pm</p>
+                <p>Monday: Closed</p>
+              </p>
+            </article>
+          </section>
+ 
     </main>
 
     <!-- Footer Element -->
